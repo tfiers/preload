@@ -6,6 +6,7 @@ def test(capsys: CaptureFixture):
 
     # Prevent pytest from swallowing stdout
     with capsys.disabled():
-        from preludio import preload_with_feedback
+        from preludio import preload_with_feedback, __version__
 
+        print(f"Preludio version: {__version__}")
         preload_with_feedback(["sys", "os.path"])
