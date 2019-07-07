@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import find_packages, setup
 
 
 GITHUB_URL = "https://github.com/tfiers/preload"
