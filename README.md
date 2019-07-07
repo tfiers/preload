@@ -12,7 +12,7 @@ happening, to avoid this impression:
 ```
 pip install preload
 ```
-This will get you the [![PyPI](https://img.shields.io/pypi/v/preload.svg?label=latest%20version)](https://pypi.python.org/pypi/preload/)
+This will get you the [![PyPI](https://img.shields.io/pypi/v/preload.svg?label=latest%20version%20on%20PyPI:)](https://pypi.python.org/pypi/preload/)
 
 ## Usage
 
