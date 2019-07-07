@@ -1,7 +1,4 @@
 # fmt: off
-import sys
-import pytest
-
 
 MODULES = ["matplotlib.pyplot", "scipy.signal"]
 
@@ -18,6 +15,7 @@ def test_normal_usage(capsys):
     with capsys.disabled():
         from preload import __version__
         print(f"Preload version {__version__}")
+        import sys
         for module in MODULES:
             assert module not in sys.modules
         normal_usage()
@@ -29,6 +27,7 @@ def test_normal_usage(capsys):
 # noinspection PyUnresolvedReferences
 def test_already_imported():
     from preload import preload_with_feedback
+    import pytest
     import scipy
     with pytest.warns(UserWarning, match="already been imported"):
         preload_with_feedback(["scipy"])

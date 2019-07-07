@@ -4,7 +4,7 @@ Python programs often seem to "hang" in the beginning. This is due to
 heavy modules being imported. This package lets the user now what is
 happening, to avoid this impression:
 
-![A console showing the output of the below program.](example.gif)
+![A console showing the output of the program under "Usage"](https://raw.githubusercontent.com/tfiers/preload/master/example.gif)
 
 
 ## Usage
