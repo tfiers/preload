@@ -12,15 +12,16 @@ happening, to avoid this impression:
 ```
 pip install preload
 ```
-This will get you the [![PyPI](https://img.shields.io/pypi/v/preload.svg?label=latest%20version%20on%20PyPI:)](https://pypi.python.org/pypi/preload/)
+This will get you the
+[![Latest version on PyPI](https://img.shields.io/pypi/v/preload.svg?label=latest%20version%20on%20PyPI:)](https://pypi.python.org/pypi/preload/)
 
 ## Usage
 
 ```python
-from preload import preload_with_feedback
-preload_with_feedback(["matplotlib.pyplot", "scipy.signal"])
+from preload import preload
+preload(["matplotlib.pyplot", "scipy.signal"])
 
-# [Rest of your code, such as: ]
+# Rest of your imports and code, such as:
 import numpy as np
 import scipy.signal
 import matplotlib.pyplot as plt

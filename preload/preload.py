@@ -5,7 +5,7 @@ from typing import Iterable
 from warnings import warn
 
 
-def preload_with_feedback(module_names: Iterable[str]):
+def preload(module_names: Iterable[str]):
     """
     Import heavy modules, so that subsequent import statements run quickly.
     Should be called at the very start of your program. The user is informed of

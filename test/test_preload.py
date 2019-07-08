@@ -4,8 +4,8 @@ MODULES = ["matplotlib.pyplot", "scipy.signal"]
 
 
 def normal_usage():
-    from preload import preload_with_feedback
-    preload_with_feedback(MODULES)
+    from preload import preload
+    preload(MODULES)
     print("Hello")
 
 
@@ -26,11 +26,11 @@ def test_normal_usage(capsys):
 # Avoid PyCharm removing the unused import:
 # noinspection PyUnresolvedReferences
 def test_already_imported():
-    from preload import preload_with_feedback
+    from preload import preload
     import pytest
     import scipy
     with pytest.warns(UserWarning, match="already been imported"):
-        preload_with_feedback(["scipy"])
+        preload(["scipy"])
 
 
 if __name__ == '__main__':
