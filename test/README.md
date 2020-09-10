@@ -1,8 +1,8 @@
 # How to run
 
-Install test runner:
+Install testing dependencies:
 ```
-pip install pytest
+pip install -r requirements.txt
 ```
 
 Run tests:
