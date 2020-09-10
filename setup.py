@@ -21,6 +21,10 @@ setup(
         "Operating System :: OS Independent",
     ],
     packages=find_packages(),
-    use_scm_version=True,  # Get package version from git tags.
+    # Get package version from git tags
     setup_requires=["setuptools_scm"],
+    use_scm_version={
+        "version_scheme": "post-release",
+        "local_scheme": "dirty-tag",
+    },
 )
