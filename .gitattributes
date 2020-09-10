@@ -1,0 +1,3 @@
+# Make git auto-convert Windows line endings (CRLF) into UNIX line endings (LF) in newly
+# added files.
+* text=auto eol=lf
