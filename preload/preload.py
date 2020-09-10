@@ -8,11 +8,12 @@ from warnings import warn
 def preload(module_names: Iterable[str]):
     """
     Import heavy modules, so that subsequent import statements run quickly.
+
     Should be called at the very start of your program. The user is informed of
     progress by print statements; this feedback avoids the impression that your
     programming is "hanging" at the start.
-    
-    :param module_names:  For example ("scipy.signal", "matplotlib.pyplot").
+
+    :param module_names:  For example `("numpy", "matplotlib.pyplot")`.
     """
     print("Importing:")
     for module_name in module_names:
