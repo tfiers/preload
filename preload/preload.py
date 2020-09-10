@@ -20,10 +20,11 @@ def preload(module_names: Iterable[str]):
             print(f" - {module_name}.. ", end="", flush=True)
             t0 = time()
             import_module(module_name)
-            print(f"✓ ({time() - t0:.2f}s)")
+            Δt = time() - t0
+            print(f"✓ ({Δt:.2f} s)")
         else:
             warn(
-                f"""Module "{module_name}" has already been imported. Make sure
-                to import and call "preload_with_feedback" before any other
-                import statements."""
+                f'Module "{module_name}" has already been imported. Make sure to import'
+                "and call `preload` at the very start of your program, before any other"
+                "import statements."
             )
